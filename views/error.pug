@@ -1,0 +1,15 @@
+html
+    head
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700|Roboto:300,400,500,700,900&display=swap&subset=latin-ext")
+        link(rel="stylesheet" href="css/style.css")
+    body
+        .container
+            span(class="emoji") 😔
+            h1 #{message}
+            p error status #{status}
+            p(class="text") Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            span Request time is <b>#{time}</b>
+            hr
+            .links
+                a(href="http://localhost:4000" class="button") home
+        

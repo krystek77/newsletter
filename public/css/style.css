@@ -1,0 +1,92 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: url('../images/donotthink.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: rgba(13, 60, 76, 0.8);
+    box-shadow: 0px 0px 4px 1px rgba(213, 230, 225, 0.6);
+    padding: 1rem 2rem;
+    border-radius: 0.2rem;
+    max-width: 650px;
+    position: relative;
+}
+
+.emoji {
+    position: absolute;
+    font-size: 3rem;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.links {
+    text-align: right;
+    padding: 1rem 0rem;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: -0.1rem;
+    text-align: center;
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.text {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+span {
+    color: #e1e0cc;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.button {
+    background-color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    color: #0D3C4C;
+    margin-left: 0.5rem;
+    display: inline-block;
+}
+
+.button.error {
+    background-color: #d1a18a;
+}
+
+.button:hover {
+    background-color: #0D3C4C;
+    color: white;
+}
+
+.button.error:hover {
+    background-color: white;
+    color: #d1a18a;
+}
