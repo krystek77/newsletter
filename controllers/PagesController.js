@@ -14,3 +14,9 @@ exports.contact = (req, res) => {
 	// console.log(time);
 	res.render('contact', { title: 'Contact Page', message: "Let's talk...", time });
 };
+
+//newsletter controller
+exports.newsletter = (req, res) => {
+	const time = req.time;
+	res.render('newsletter', { title: 'Newsletter', message: 'Be up to date', time });
+};

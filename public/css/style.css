@@ -69,24 +69,75 @@ span {
 }
 
 .button {
-    background-color: white;
+    /* background-color: white;
     text-decoration: none;
     padding: 1rem 2rem;
     color: #0D3C4C;
     margin-left: 0.5rem;
-    display: inline-block;
+    display: inline-block; */
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    margin-left: 1rem;
 }
 
 .button.error {
-    background-color: #d1a18a;
+    color: #0f7995;
 }
 
 .button:hover {
-    background-color: #0D3C4C;
+    color: #2aa29b;
+    text-decoration: underline;
+}
+
+/* form styles */
+.form {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    display: block;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 1rem 2rem;
+    border: 1px solid white;
+    background-color: rgb(13, 60, 76);
+    outline: none;
+    font-size: 1.6rem;
     color: white;
 }
 
-.button.error:hover {
+.form-control:focus {
+    border: 1px solid rgb(13, 60, 76);
     background-color: white;
-    color: #d1a18a;
+    color: rgb(13, 60, 76);
+}
+
+.form-group.btn {
+    text-align: right;
+}
+
+.btn-submit {
+    border: initial;
+    background-color: #2aa29b;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    color: white;
+    margin-top: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-submit:hover {
+    background-color: white;
+    color: #2aa29b
 }

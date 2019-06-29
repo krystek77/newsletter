@@ -11,6 +11,12 @@ router.get('/', PagesController.home);
 //@desc GET contact page
 //@access Public
 router.get('/contact', PagesController.contact);
+
+//@route '/newsletter'
+//@desc form page
+//@access Public
+router.get('/newsletter', PagesController.newsletter);
+
 //
 
 router.post('/', (req, res) => {

@@ -4,14 +4,25 @@ html
         link(rel="stylesheet" href="css/style.css")
     body
         .container
-            span(class="emoji") 😃
+            span(class="emoji") ✉️
             h1 #{title}
             p #{message}
             p(class="text") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, sed exercitationem quisquam quaerat nulla enim ex fuga soluta numquam neque ipsam dolor dicta aut cupiditate voluptatem perspiciatis, maiores culpa delectus.
             span Request time is <b>#{time}</b>
             hr
+            .form-wrapper
+                form.form(method='POST' action='/register')
+                    .form-group
+                        label(for='name') nice to meet you
+                        input#name.form-control(type='text' placeholder='krystian' name='name')
+                    .form-group
+                        label(for='email') e-mail
+                        input#email.form-control(type='text' placeholder='kryniu77@wp.pl' name='email')
+                    .form-group.btn
+                        button.btn-submit(type='submit') Register
+            hr
             .links
+                a(href="http://localhost:4000" class="button") home
                 a(href="http://localhost:4000/contact" class="button") contact
-                a(href="http://localhost:4000/newsletter" class="button") newsletter
                 a(href="http://localhost:4000/error" class="button error") get error
         
