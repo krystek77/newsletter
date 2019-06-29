@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const PagesController = require('../controllers/PagesController');
+const ApplicationController = require('../controllers/ApplicationController');
 
 //@route '/'
 //@desc GET home page
@@ -17,19 +18,9 @@ router.get('/contact', PagesController.contact);
 //@access Public
 router.get('/newsletter', PagesController.newsletter);
 
-//
-
-router.post('/', (req, res) => {
-	const { firstName, lastName } = req.body;
-	res.status(201).json({
-		firstName,
-		lastName,
-		request: {
-			url: req.url,
-			path: req.path,
-			params: req.params,
-		},
-	});
-});
+//@route '/register'
+//@desc register to newsletter
+//@access Public
+router.post('/register', ApplicationController.registerToNewsletter);
 
 module.exports = router;
